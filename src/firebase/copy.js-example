@@ -1,0 +1,10 @@
+export const firebaseConfig = {
+    apiKey: "XXXXxxxxxxXXXXxxxxxxXXXXxxxxxxXXXXxxxxx",
+    authDomain: "example.firebaseapp.com",
+    databaseURL: "https://example.firebaseio.com",
+    projectId: "example-id",
+    storageBucket: "example.appspot.com",
+    messagingSenderId: "XXXXXXXXXXXX",
+    appId: "X:XXXXXXXXXXXX:web:XXXXXXXXXXXXXXXXXXXXXX",
+    measurementId: "X-XXXXXXXXXX"
+}

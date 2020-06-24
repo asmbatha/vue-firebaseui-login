@@ -1,4 +1,4 @@
-# firebase-login
+# vue-firebaseui-login
 
 ## Project setup
 ```

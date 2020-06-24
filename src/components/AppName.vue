@@ -1,5 +1,5 @@
 <template>
-    <span class="app-name">W3pp Vue FirebaseUI Login</span>
+    <span class="app-name">Vue FirebaseUI Login</span>
 </template>
 <style lang="scss">
     .app-name {

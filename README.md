@@ -5,6 +5,8 @@
 yarn install
 ```
 
+create a src/firebase/config.js
+
 ### Compiles and hot-reloads for development
 ```
 yarn serve

@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import userPlugin from '@/services/user'
+import $user from '@/services/user'
+$user.service.onTransition(state => {
+    console.log('$user::state.value', state.value)
+})
+$user.service.start()
 
 Vue.config.productionTip = false
-Vue.use(userPlugin)
 
 new Vue({
   router,

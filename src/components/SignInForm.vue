@@ -8,30 +8,18 @@ import firebase from 'firebase/app'
 import * as firebaseui from 'firebaseui'
 import 'firebaseui/dist/firebaseui.css'
 export default {
-    data () {
-        return {
-            start: false
-        }
-    },
     mounted () {
-        try {
-            var uiConfig = {
-                signInSuccessUrl: '/',
-                signInOptions: [
-                    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-                    firebase.auth.EmailAuthProvider.PROVIDER_ID,
-                    firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
-                ]
-            }
-            
-            this.$user.ui.start('#firebaseui-auth-container', uiConfig);
-        } catch (e) {
-            console.error('error found here', e)
+        const uiConfig = {
+            signInSuccessUrl: '/',
+            signInOptions: [
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
+            ]
         }
+
+        const ui = firebaseui.auth.AuthUI.getInstance() || new firebaseui.auth.AuthUI(auth)
+        ui.start('#firebaseui-auth-container', uiConfig)
     }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

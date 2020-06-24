@@ -1,0 +1,10 @@
+{
+    "name": "w3pp-vue-firebaseui-login",
+    "short_name": "w3pp-vue-firebaseui-login",
+    "theme_color": "#FFFFFF",
+    "icons": [
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#000000"
+}

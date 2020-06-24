@@ -22,6 +22,9 @@ export default class VueXstate {
                     Vue.set(this.state, 'value', state.value)
                     Vue.set(this.state, 'context', state.context)
                 })
-            : {start(){}}
+            : {
+                start(){},
+                onTransition (){}
+            }
     }
 }

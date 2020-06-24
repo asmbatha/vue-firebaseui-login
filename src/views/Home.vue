@@ -18,7 +18,6 @@ export default {
         '$user.state.value': {
             immediate: true,
             handler (state) {
-                console.log('home::state', state)
                 switch (state) {
                     case 'authenticated':
                         this.$router.push("details")
